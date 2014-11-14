@@ -1,45 +1,56 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>MATHIASBÆRBAR</Machine>
-    <WindowsUser>Mathias</WindowsUser>
+    <Machine>KASPER-MAC</Machine>
+    <WindowsUser>Kasper</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>bd3d0bb7-aec4-4aef-b1e3-86fd262d3d90</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\obj\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="c:\users\mathias\documents\visual studio 2013\Projects\Turist App v4\Turist App v4\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="c:\users\mathias\documents\visual studio 2013\Projects\Turist App v4\Turist App v4\bin\Debug\Turist App v4.exe">
+    <AppxPackagedFile Include="C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\Turist App v4.exe">
       <PackagePath>Turist App v4.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\mathias\documents\visual studio 2013\Projects\Turist App v4\Turist App v4\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\mathias\documents\visual studio 2013\Projects\Turist App v4\Turist App v4\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\mathias\documents\visual studio 2013\Projects\Turist App v4\Turist App v4\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\mathias\documents\visual studio 2013\Projects\Turist App v4\Turist App v4\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\mathias\documents\visual studio 2013\Projects\Turist App v4\Turist App v4\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\mathias\documents\visual studio 2013\Projects\Turist App v4\Turist App v4\bin\Debug\MainPage.xbf">
-      <PackagePath>MainPage.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\View\AttraktionInfo.xbf">
+      <PackagePath>View\AttraktionInfo.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\mathias\documents\visual studio 2013\Projects\Turist App v4\Turist App v4\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\View\MainView.xbf">
+      <PackagePath>View\MainView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\View\TilføjAttraktionView.xbf">
+      <PackagePath>View\TilføjAttraktionView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\Turist App v4.xr.xml">
+      <PackagePath>Turist App v4.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

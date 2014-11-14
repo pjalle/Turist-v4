@@ -29,3 +29,45 @@ c:\users\mathias\documents\visual studio 2013\Projects\Turist App v4\Turist App 
 c:\users\mathias\documents\visual studio 2013\Projects\Turist App v4\Turist App v4\obj\Debug\qualifiers.txt.intermediate
 c:\users\mathias\documents\visual studio 2013\Projects\Turist App v4\Turist App v4\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 c:\users\mathias\documents\visual studio 2013\Projects\Turist App v4\Turist App v4\obj\Debug\ProjectArchitectures.txt
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\App.xbf
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\Turist App v4.xr.xml
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\Turist App v4.exe
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\Turist App v4.pdb
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\resources.pri
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\AppxManifest.xml
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\Turist App v4.build.appxrecipe
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\obj\Debug\App.g.i.cs
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\obj\Debug\App.g.cs
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\obj\Debug\App.xaml
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\obj\Debug\App.xbf
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\obj\Debug\XamlSaveStateFile.xml
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\obj\Debug\Turist App v4.exe
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\obj\Debug\Turist App v4.pdb
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\obj\Debug\priconfig.xml
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\obj\Debug\priconfig.xml.intermediate
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\obj\Debug\layout.resfiles
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\obj\Debug\layout.resfiles.intermediate
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\obj\Debug\resources.resfiles
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\obj\Debug\resources.resfiles.intermediate
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\obj\Debug\pri.resfiles
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\obj\Debug\pri.resfiles.intermediate
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\obj\Debug\qualifiers.txt
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\obj\Debug\qualifiers.txt.intermediate
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\obj\Debug\ProjectArchitectures.txt
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\obj\Debug\View\MainView.g.i.cs
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\obj\Debug\View\MainView.g.cs
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\View\AttraktionInfo.xbf
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\View\MainView.xbf
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\obj\Debug\View\AttraktionInfo.g.i.cs
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\obj\Debug\View\AttraktionInfo.g.cs
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\obj\Debug\View\AttraktionInfo.xaml
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\obj\Debug\View\MainView.xaml
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\obj\Debug\View\AttraktionInfo.xbf
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\obj\Debug\View\MainView.xbf
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\View\TilføjAttraktionView.xbf
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\obj\Debug\View\TilføjAttraktionView.g.i.cs
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\obj\Debug\View\TilføjAttraktionView.g.cs
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\obj\Debug\View\TilføjAttraktionView.xaml
+C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\obj\Debug\View\TilføjAttraktionView.xbf

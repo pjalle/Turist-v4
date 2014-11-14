@@ -14,6 +14,10 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
+using Microsoft.VisualBasic.CompilerServices;
+using Turist_App_v4.Model;
+using Turist_App_v4.View;
+using Turist_App_v4.Viewmodel;
 
 namespace Turist_App_v4
 {
@@ -25,6 +29,16 @@ namespace Turist_App_v4
         public MainPage()
         {
             this.InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof (AttraktionInfo));
+        }
+
+        private void TilføjAttraktion_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof (TilføjAttraktionView));
         }
     }
 }
