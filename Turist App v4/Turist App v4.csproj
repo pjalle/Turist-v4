@@ -113,6 +113,7 @@
     <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="Common\SuspensionManager.cs" />
     <Compile Include="Model\Attraktioner.cs" />
+    <Compile Include="Model\Kategorier.cs" />
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Viewmodel\MainViewVM.cs" />
     <Compile Include="View\AttraktionInfo.xaml.cs">

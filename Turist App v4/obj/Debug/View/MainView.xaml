@@ -33,8 +33,8 @@
         <Border BorderBrush="Black" BorderThickness="4" Margin="10,10,6,10" CornerRadius="20" Grid.Column="1">
             <TextBlock TextWrapping="Wrap" Text="Attraktioner" TextAlignment="Center" FontSize="95"/>
         </Border>
-        <ListView Margin="10" Grid.Row="1" Grid.RowSpan="2" BorderBrush="Black" BorderThickness="0" ItemsSource="{Binding AttraktionsListe}" SelectedItem="{Binding SelectedAttraktion, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-        <Button x:ConnectionId='2' x:Name="MainViewSelectAttraktionButton" Content="{Binding SelectedAttraktion.Navn}" Grid.Column="2" HorizontalAlignment="Stretch" Margin="10" Grid.Row="2" VerticalAlignment="Stretch" BorderBrush="Black" BorderThickness="2"                     />
+        <ListView x:Name="MainViewListView" Margin="10" Grid.Row="1" Grid.RowSpan="2" BorderBrush="Black" BorderThickness="0" ItemsSource="{Binding Kategoriers}" SelectedItem="{Binding SelectedKategori, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" SelectedIndex="-1"/>
+        <Button x:ConnectionId='2' x:Name="MainViewSelectAttraktionButton" Content="{Binding SelectedKategori.Name}" Grid.Column="2" HorizontalAlignment="Stretch" Margin="10" Grid.Row="2" VerticalAlignment="Stretch" BorderBrush="Black" BorderThickness="2"                     />
         <Image Grid.Column="1" Margin="10" Grid.Row="1">
             <FlyoutBase.AttachedFlyout>
                 <Flyout>

@@ -2,11 +2,12 @@
 <Roots >
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="DefaultViewModel" />
-    <RootPropertyPathName Name="SelectedAttraktion" />
-    <RootPropertyPathName Name="Navn" />
+    <RootPropertyPathName Name="StaticSelectedKategori" />
+    <RootPropertyPathName Name="Name" />
     <RootPropertyPathName Name="NavigationHelper" />
     <RootPropertyPathName Name="GoBackCommand" />
-    <RootPropertyPathName Name="AttraktionsListe" />
+    <RootPropertyPathName Name="SelectedKategori" />
+    <RootPropertyPathName Name="Kategoriers" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -62,6 +63,7 @@
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="SelectedItem" />
+      <RootProperty Name="SelectedIndex" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Margin" />
