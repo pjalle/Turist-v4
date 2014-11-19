@@ -7,12 +7,6 @@
     xmlns:Viewmodel="using:Turist_App_v4.Viewmodel"
     x:Class="Turist_App_v4.MainPage"
     mc:Ignorable="d">
-    <Page.BottomAppBar>
-        <CommandBar>
-            <AppBarButton x:ConnectionId='1' x:Name="TilføjAttraktion" Icon="Add" Label="Tilføj Attraktion"                               />
-            <AppBarButton Icon="Clear" Label="Fjern Attraktion"/>
-        </CommandBar>
-    </Page.BottomAppBar>
 
 
 
@@ -34,7 +28,7 @@
             <TextBlock TextWrapping="Wrap" Text="Attraktioner" TextAlignment="Center" FontSize="95"/>
         </Border>
         <ListView x:Name="MainViewListView" Margin="10" Grid.Row="1" Grid.RowSpan="2" BorderBrush="Black" BorderThickness="0" ItemsSource="{Binding Kategoriers}" SelectedItem="{Binding SelectedKategori, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" SelectedIndex="-1"/>
-        <Button x:ConnectionId='2' x:Name="MainViewSelectAttraktionButton" Content="{Binding SelectedKategori.Name}" Grid.Column="2" HorizontalAlignment="Stretch" Margin="10" Grid.Row="2" VerticalAlignment="Stretch" BorderBrush="Black" BorderThickness="2"                     />
+        <Button x:ConnectionId='1' x:Name="MainViewSelectAttraktionButton" Content="{Binding SelectedKategori.Name}" Grid.Column="2" HorizontalAlignment="Stretch" Margin="10" Grid.Row="2" VerticalAlignment="Stretch" BorderBrush="Black" BorderThickness="2"                     />
         <Image Grid.Column="1" Margin="10" Grid.Row="1">
             <FlyoutBase.AttachedFlyout>
                 <Flyout>

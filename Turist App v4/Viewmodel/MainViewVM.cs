@@ -14,16 +14,23 @@ namespace Turist_App_v4.Viewmodel
     class MainViewVM : INotifyPropertyChanged
     {
         private bool hasRun;
-        private static ObservableCollection<Attraktioner> _attraktionsListe = new ObservableCollection<Attraktioner>();
         private static ObservableCollection<Kategorier> _kategoriers = new ObservableCollection<Kategorier>();
         private Attraktioner _selectedAttraktion;
         private Kategorier _selectedKategori;
+        private static ObservableCollection<Attraktioner> _restauranter = new ObservableCollection<Attraktioner>();
+        private static ObservableCollection<Attraktioner> _transport = new ObservableCollection<Attraktioner>();
         private static Kategorier _staticSelectedKategori;
 
-        public static ObservableCollection<Attraktioner> AttraktionsListe
+        public static ObservableCollection<Attraktioner> Restauranter
         {
-            get { return _attraktionsListe; }
-            set { _attraktionsListe = value; }
+            get { return _restauranter; }
+            set { _restauranter = value; }
+        }
+
+        public static ObservableCollection<Attraktioner> Transport
+        {
+            get { return _transport; }
+            set { _transport = value; }
         }
 
         public static ObservableCollection<Kategorier> Kategoriers

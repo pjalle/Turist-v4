@@ -7,12 +7,6 @@
     xmlns:Viewmodel="using:Turist_App_v4.Viewmodel"
     x:Class="Turist_App_v4.MainPage"
     mc:Ignorable="d">
-    <Page.BottomAppBar>
-        <CommandBar>
-            <AppBarButton x:Name="TilføjAttraktion" Icon="Add" Label="Tilføj Attraktion" Click="TilføjAttraktion_Click"/>
-            <AppBarButton Icon="Clear" Label="Fjern Attraktion"/>
-        </CommandBar>
-    </Page.BottomAppBar>
 
 
 

@@ -107,7 +107,6 @@ namespace Turist_App_v4.View
 
         private void TilføjAttraktionButton_Click(object sender, RoutedEventArgs e)
         {
-            MainViewVM.AttraktionsListe.Add(new Attraktioner(TilføjAttraktionVurderingTB.Text, TilføjAttraktionÅbningstiderTB.Text, TilføjAttraktionTelefonTB.Text, TilføjAttraktionPrisTB.Text, TilføjAttraktionAfstandTB.Text, TilføjAttraktionBeskrivelseTB.Text, TilføjAttraktionNavnTB.Text, TilføjAttraktionAdresseTB.Text));
             Frame.Navigate(typeof (MainPage));
         }
     }

@@ -26,14 +26,18 @@ namespace Turist_App_v4
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        Kategorier Restaurant = new Kategorier("Restaurant", "RestaurantBillede");
-        Kategorier Transport = new Kategorier("Transport", "TransportBillede");
+        public static string ValgtKategori = "";
+
+        Kategorier Restaurant = new Kategorier("Restaurant", "RestaurantBillede", MainViewVM.Restauranter);
+        Kategorier Transport = new Kategorier("Transport", "TransportBillede", MainViewVM.Transport);
 
         public MainPage()
         {
-            MainViewVM.Kategoriers.Clear();
-            MainViewVM.Kategoriers.Add(Restaurant);
-            MainViewVM.Kategoriers.Add(Transport);
+            if (MainViewVM.Kategoriers.Count < 1)
+            {
+                MainViewVM.Kategoriers.Add(Restaurant);
+                MainViewVM.Kategoriers.Add(Transport);
+            }
             InitializeComponent();
         }
 
@@ -43,15 +47,13 @@ namespace Turist_App_v4
             if (MainViewListView.SelectedIndex == 0)
             {
                 MainViewVM.StaticSelectedKategori = Restaurant;
+                ValgtKategori = "Restaurant";
             }
             if (MainViewListView.SelectedIndex == 1)
             {
                 MainViewVM.StaticSelectedKategori = Transport;
+                ValgtKategori = "Transport";
             }
-        }
-        private void TilføjAttraktion_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof (TilføjAttraktionView));
         }
     }
 }

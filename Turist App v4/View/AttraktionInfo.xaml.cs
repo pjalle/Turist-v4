@@ -15,6 +15,8 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234237
+using Turist_App_v4.Model;
+using Turist_App_v4.Viewmodel;
 
 namespace Turist_App_v4.View
 {
@@ -102,5 +104,17 @@ namespace Turist_App_v4.View
         }
 
         #endregion
+
+        private void AppBarButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (pageTitle.Text == "Restaurant")
+            {
+                Frame.Navigate(typeof (TilføjAttraktionView));
+            }
+            if (pageTitle.Text == "Transport")
+            {
+                Frame.Navigate(typeof (MainPage));  
+            }
+        }
     }
 }
