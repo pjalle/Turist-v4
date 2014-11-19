@@ -107,7 +107,15 @@ namespace Turist_App_v4.View
 
         private void TilføjAttraktionButton_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof (MainPage));
+            if (pageTitle.Text == "Restaurant")
+            {
+                MainViewVM.Restauranter.Add(new Attraktioner(TilføjAttraktionVurderingTB.Text, TilføjAttraktionÅbningstiderTB.Text, TilføjAttraktionTelefonTB.Text, TilføjAttraktionPrisTB.Text, TilføjAttraktionAfstandTB.Text, TilføjAttraktionBeskrivelseTB.Text, TilføjAttraktionNavnTB.Text, TilføjAttraktionAdresseTB.Text));
+            }
+            if (pageTitle.Text == "Transport")
+            {
+                MainViewVM.Transport.Add(new Attraktioner(TilføjAttraktionVurderingTB.Text, TilføjAttraktionÅbningstiderTB.Text, TilføjAttraktionTelefonTB.Text, TilføjAttraktionPrisTB.Text, TilføjAttraktionAfstandTB.Text, TilføjAttraktionBeskrivelseTB.Text, TilføjAttraktionNavnTB.Text, TilføjAttraktionAdresseTB.Text));
+            }
+            Frame.Navigate(typeof (AttraktionInfo));
         }
     }
 }

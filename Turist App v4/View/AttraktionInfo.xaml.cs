@@ -107,13 +107,18 @@ namespace Turist_App_v4.View
 
         private void AppBarButton_Click(object sender, RoutedEventArgs e)
         {
+                Frame.Navigate(typeof (TilføjAttraktionView));
+        }
+
+        private void AppBarButton_Click_1(object sender, RoutedEventArgs e)
+        {
             if (pageTitle.Text == "Restaurant")
             {
-                Frame.Navigate(typeof (TilføjAttraktionView));
+                MainViewVM.Restauranter.RemoveAt(AttraktionInfoListView.SelectedIndex);
             }
             if (pageTitle.Text == "Transport")
             {
-                Frame.Navigate(typeof (MainPage));  
+                MainViewVM.Transport.RemoveAt(AttraktionInfoListView.SelectedIndex);
             }
         }
     }

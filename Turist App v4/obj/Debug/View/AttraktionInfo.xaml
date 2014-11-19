@@ -18,7 +18,11 @@
     <Page.BottomAppBar>
         <CommandBar>
             <AppBarButton x:ConnectionId='1' Icon="Add" Label="Tilføj Attraktion"                           />
-            <AppBarButton Icon="Cancel" Label="AppBarButton"/>
+            <AppBarButton x:ConnectionId='2' Label="Slet Attraktion"                             >
+                <AppBarButton.Icon>
+                    <SymbolIcon Height="40" Symbol="Cancel" VerticalAlignment="Top"/>
+                </AppBarButton.Icon>
+            </AppBarButton>
         </CommandBar>
     </Page.BottomAppBar>
 
@@ -52,16 +56,16 @@
                 <ColumnDefinition Width="120"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Button x:Name="backButton" Margin="39,59,39,0" Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
+            <Button x:ConnectionId='3' x:Name="backButton" Margin="39,59,39,0" Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
 				Style="{StaticResource NavigationBackButtonNormalStyle}"
 				VerticalAlignment="Top"
 				AutomationProperties.Name="Back"
 				AutomationProperties.AutomationId="BackButton"
-				AutomationProperties.ItemType="Navigation Button"/>
+				AutomationProperties.ItemType="Navigation Button"                         />
             <TextBlock x:Name="pageTitle" Text="{Binding StaticSelectedKategori.Name}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
 				IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
         </Grid>
-        <ListView Margin="10" Grid.Row="1" BorderBrush="Black" BorderThickness="1" ItemsSource="{Binding StaticSelectedKategori.UnderAttraktioner}"/>
+        <ListView x:Name="AttraktionInfoListView" Margin="10" Grid.Row="1" BorderBrush="Black" BorderThickness="1" ItemsSource="{Binding StaticSelectedKategori.UnderAttraktioner}"/>
     </Grid>
 </Page>
 

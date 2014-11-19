@@ -18,7 +18,11 @@
     <Page.BottomAppBar>
         <CommandBar>
             <AppBarButton Icon="Add" Label="Tilføj Attraktion" Click="AppBarButton_Click"/>
-            <AppBarButton Icon="Cancel" Label="AppBarButton"/>
+            <AppBarButton Label="Slet Attraktion" Click="AppBarButton_Click_1">
+                <AppBarButton.Icon>
+                    <SymbolIcon Height="40" Symbol="Cancel" VerticalAlignment="Top"/>
+                </AppBarButton.Icon>
+            </AppBarButton>
         </CommandBar>
     </Page.BottomAppBar>
 
@@ -57,10 +61,10 @@
 				VerticalAlignment="Top"
 				AutomationProperties.Name="Back"
 				AutomationProperties.AutomationId="BackButton"
-				AutomationProperties.ItemType="Navigation Button"/>
+				AutomationProperties.ItemType="Navigation Button" Click="backButton_Click"/>
             <TextBlock x:Name="pageTitle" Text="{Binding StaticSelectedKategori.Name}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
 				IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
         </Grid>
-        <ListView Margin="10" Grid.Row="1" BorderBrush="Black" BorderThickness="1" ItemsSource="{Binding StaticSelectedKategori.UnderAttraktioner}"/>
+        <ListView x:Name="AttraktionInfoListView" Margin="10" Grid.Row="1" BorderBrush="Black" BorderThickness="1" ItemsSource="{Binding StaticSelectedKategori.UnderAttraktioner}"/>
     </Grid>
 </Page>

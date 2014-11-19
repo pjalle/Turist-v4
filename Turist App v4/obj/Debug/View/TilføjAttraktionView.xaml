@@ -1,13 +1,14 @@
 ﻿<Page
-    x:Name="pageRoot"
-    x:Class="Turist_App_v4.View.TilføjAttraktionView"
-    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Turist_App_v4.View"
     xmlns:common="using:Turist_App_v4.Common"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Viewmodel="using:Turist_App_v4.Viewmodel"
+    x:Name="pageRoot"
+    x:Class="Turist_App_v4.View.TilføjAttraktionView"
+    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Mode=Self}}"
     mc:Ignorable="d">
 
     <Page.Resources>
@@ -38,13 +39,17 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Button x:Name="backButton" Margin="39,59,39,0" Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
-                        Style="{StaticResource NavigationBackButtonNormalStyle}"
-                        VerticalAlignment="Top"
-                        AutomationProperties.Name="Back"
-                        AutomationProperties.AutomationId="BackButton"
-                        AutomationProperties.ItemType="Navigation Button"/>
+				Style="{StaticResource NavigationBackButtonNormalStyle}"
+				VerticalAlignment="Top"
+				AutomationProperties.Name="Back"
+				AutomationProperties.AutomationId="BackButton"
+				AutomationProperties.ItemType="Navigation Button"/>
             <TextBlock x:Name="pageTitle" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
-                        IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40" Text="Tilføj Attraktion"/>
+				IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40" Text="{Binding StaticSelectedKategori.Name}">
+                <TextBlock.DataContext>
+                    <Viewmodel:MainViewVM/>
+                </TextBlock.DataContext>
+            </TextBlock>
         </Grid>
         <TextBlock HorizontalAlignment="Left" Margin="30,32,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Navn:" VerticalAlignment="Top" FontSize="20"/>
         <TextBlock HorizontalAlignment="Left" Margin="30,70,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Adresse:" VerticalAlignment="Top" FontSize="20"/>

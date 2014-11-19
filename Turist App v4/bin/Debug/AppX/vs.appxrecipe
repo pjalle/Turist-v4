@@ -26,7 +26,7 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\Turist App v4.exe">
       <PackagePath>Turist App v4.exe</PackagePath>
-      <Modified>2014-11-19T10:25:03.165</Modified>
+      <Modified>2014-11-19T10:42:46.529</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
@@ -54,19 +54,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\View\AttraktionInfo.xbf">
       <PackagePath>View\AttraktionInfo.xbf</PackagePath>
-      <Modified>2014-11-19T10:25:02.847</Modified>
+      <Modified>2014-11-19T10:42:46.213</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\View\MainView.xbf">
       <PackagePath>View\MainView.xbf</PackagePath>
-      <Modified>2014-11-19T10:25:02.847</Modified>
+      <Modified>2014-11-19T10:42:46.213</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\View\TilføjAttraktionView.xbf">
       <PackagePath>View\TilføjAttraktionView.xbf</PackagePath>
-      <Modified>2014-11-19T10:03:51.033</Modified>
+      <Modified>2014-11-19T10:42:46.213</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\Turist App v4.xr.xml">
       <PackagePath>Turist App v4.xr.xml</PackagePath>
-      <Modified>2014-11-19T10:25:02.833</Modified>
+      <Modified>2014-11-19T10:40:37.161</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
