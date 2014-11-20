@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
   dslVersion="1.0.0.0"
   Id="af11a049-3827-4c91-94f0-661281ba42b4"
   name="DomainModel" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -307,7 +307,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="2872ec6e-2c7d-41a3-b417-6a174659bf8f"
-              LastKnownName="Vælg attraktion"
+              LastKnownName="Vælg Kategori"
               LastKnownLocation="DomainModel.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -343,14 +343,14 @@
     <packageHasNamedElement>
       <useCase
         Id="5749d93d-f790-4f0e-8b4a-04d6aa3bc6aa"
-        name="Opret Kommentar"
+        name="Opret Attraktion "
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="2872ec6e-2c7d-41a3-b417-6a174659bf8f"
-        name="Vælg attraktion"
+        name="Vælg Kategori"
         isAbstract="false"
         isLeaf="false">
         <targetEnds>
@@ -363,7 +363,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="5749d93d-f790-4f0e-8b4a-04d6aa3bc6aa"
-              LastKnownName="Opret Kommentar"
+              LastKnownName="Opret Attraktion "
               LastKnownLocation="DomainModel.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -405,6 +405,456 @@
         isAbstract="false"
         isLeaf="false"
         isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="c951d5f4-f305-4ec0-824e-5284d4f51723"
+            name="BehaviorExecutionSpecification1">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="fe13a202-0fa0-41d7-93ba-c1163f7c35a9"
+                LastKnownName="SelectedKategori.underattraktioner : Listview"
+                LastKnownLocation="DomainModel.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="58a4b1a6-05c3-45c6-b9af-f7a1e46d674e"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="DomainModel.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="be5c8849-4658-43fc-98f6-d5cc0cddf2c5"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="DomainModel.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="5b0d34c9-c586-4de6-9713-c6f3eb951065"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="DomainModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="a5c5b554-4c9d-4aaa-a21c-888390248fff"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="DomainModel.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="be5c8849-4658-43fc-98f6-d5cc0cddf2c5"
+            name="ExecutionOccurrenceSpecification1">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="59678368-bab2-418c-bbbf-63a284491f75"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="DomainModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="fe13a202-0fa0-41d7-93ba-c1163f7c35a9"
+                LastKnownName="SelectedKategori.underattraktioner : Listview"
+                LastKnownLocation="DomainModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="64c04df5-770a-4155-a9a9-c2bbe7f195df"
+            name="MessageOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="d4b0115f-0d3b-45e0-900f-d3102ff367df"
+                LastKnownName="Turist"
+                LastKnownLocation="DomainModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="5b0d34c9-c586-4de6-9713-c6f3eb951065"
+            name="MessageOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="fe13a202-0fa0-41d7-93ba-c1163f7c35a9"
+                LastKnownName="SelectedKategori.underattraktioner : Listview"
+                LastKnownLocation="DomainModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="a5c5b554-4c9d-4aaa-a21c-888390248fff"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="fe13a202-0fa0-41d7-93ba-c1163f7c35a9"
+                LastKnownName="SelectedKategori.underattraktioner : Listview"
+                LastKnownLocation="DomainModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="88b9d4ca-9e22-4909-a422-1acc7c0c98dc"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="d4b0115f-0d3b-45e0-900f-d3102ff367df"
+                LastKnownName="Turist"
+                LastKnownLocation="DomainModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="58a4b1a6-05c3-45c6-b9af-f7a1e46d674e"
+            name="ExecutionOccurrenceSpecification2">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="9d62c8d4-7389-4117-a77c-ccfb6fd863dc"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="DomainModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="fe13a202-0fa0-41d7-93ba-c1163f7c35a9"
+                LastKnownName="SelectedKategori.underattraktioner : Listview"
+                LastKnownLocation="DomainModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="894c1167-603b-4c96-a66a-221d6303a2b2"
+            name="BehaviorExecutionSpecification3">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="a980fd21-73a9-41f4-af78-6a3e53b1c5d8"
+                LastKnownName="TilføjAttraktionButton : TilføjAttraktionView"
+                LastKnownLocation="DomainModel.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="08bff288-b40e-4c0a-b8b7-b650eabbc338"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="DomainModel.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="17ae353b-85f2-4b6d-a5b3-b2082119a799"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="DomainModel.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="aa84a14a-a340-449b-b84a-f2635c6d841d"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="DomainModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="25ee71c4-9dc9-41a6-9798-2fb56d3bfd41"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="DomainModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="c0083b4f-39b8-4249-8a45-3717366dae61"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="DomainModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="b565d5b7-4bf8-4755-ae81-160edee3cba7"
+                LastKnownName="MessageOccurrenceSpecification25"
+                LastKnownLocation="DomainModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="9387525b-88d4-4fef-97f1-d5eb1f822d7b"
+                LastKnownName="MessageOccurrenceSpecification28"
+                LastKnownLocation="DomainModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="8b773f41-d8a4-4ba7-8332-2addcf472165"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="DomainModel.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="17ae353b-85f2-4b6d-a5b3-b2082119a799"
+            name="ExecutionOccurrenceSpecification5">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="e5c9611c-fa1c-48d3-8369-0ea438704584"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="DomainModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="a980fd21-73a9-41f4-af78-6a3e53b1c5d8"
+                LastKnownName="TilføjAttraktionButton : TilføjAttraktionView"
+                LastKnownLocation="DomainModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="88311866-d10c-4a28-9c4e-e79fd9b43cef"
+            name="MessageOccurrenceSpecification9">
+            <covered>
+              <lifelineMoniker
+                Id="d4b0115f-0d3b-45e0-900f-d3102ff367df"
+                LastKnownName="Turist"
+                LastKnownLocation="DomainModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="aa84a14a-a340-449b-b84a-f2635c6d841d"
+            name="MessageOccurrenceSpecification10">
+            <covered>
+              <lifelineMoniker
+                Id="a980fd21-73a9-41f4-af78-6a3e53b1c5d8"
+                LastKnownName="TilføjAttraktionButton : TilføjAttraktionView"
+                LastKnownLocation="DomainModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="9a6799dd-58a2-414b-a705-5769743029f2"
+            name="BehaviorExecutionSpecification5">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="12e3ab92-bcbf-4c9d-aad5-254f0dc9e48c"
+                LastKnownName=": Attraktioner"
+                LastKnownLocation="DomainModel.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="c45ba995-19e8-400d-bb24-fdcb20d7675f"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="DomainModel.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="c713042d-d507-4271-b9b4-a1a6c7ad323c"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="DomainModel.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="4e92357e-6dec-49af-894c-993a81480298"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="DomainModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="346e22c1-2a5e-42a9-8991-d3f861fe749d"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="DomainModel.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="c713042d-d507-4271-b9b4-a1a6c7ad323c"
+            name="ExecutionOccurrenceSpecification9">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="1bc596eb-86b4-41fa-991f-5de22d67a728"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="DomainModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="12e3ab92-bcbf-4c9d-aad5-254f0dc9e48c"
+                LastKnownName=": Attraktioner"
+                LastKnownLocation="DomainModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="25ee71c4-9dc9-41a6-9798-2fb56d3bfd41"
+            name="MessageOccurrenceSpecification17">
+            <covered>
+              <lifelineMoniker
+                Id="a980fd21-73a9-41f4-af78-6a3e53b1c5d8"
+                LastKnownName="TilføjAttraktionButton : TilføjAttraktionView"
+                LastKnownLocation="DomainModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="4e92357e-6dec-49af-894c-993a81480298"
+            name="MessageOccurrenceSpecification18">
+            <covered>
+              <lifelineMoniker
+                Id="12e3ab92-bcbf-4c9d-aad5-254f0dc9e48c"
+                LastKnownName=": Attraktioner"
+                LastKnownLocation="DomainModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="346e22c1-2a5e-42a9-8991-d3f861fe749d"
+            name="MessageOccurrenceSpecification19">
+            <covered>
+              <lifelineMoniker
+                Id="12e3ab92-bcbf-4c9d-aad5-254f0dc9e48c"
+                LastKnownName=": Attraktioner"
+                LastKnownLocation="DomainModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="c0083b4f-39b8-4249-8a45-3717366dae61"
+            name="MessageOccurrenceSpecification20">
+            <covered>
+              <lifelineMoniker
+                Id="a980fd21-73a9-41f4-af78-6a3e53b1c5d8"
+                LastKnownName="TilføjAttraktionButton : TilføjAttraktionView"
+                LastKnownLocation="DomainModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="c45ba995-19e8-400d-bb24-fdcb20d7675f"
+            name="ExecutionOccurrenceSpecification10">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="7e0db480-6192-4d2c-a6d4-73eae2a7f105"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="DomainModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="12e3ab92-bcbf-4c9d-aad5-254f0dc9e48c"
+                LastKnownName=": Attraktioner"
+                LastKnownLocation="DomainModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="8f54da9a-571f-4b10-9c47-d84c8cfed184"
+            name="BehaviorExecutionSpecification7">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="fe13a202-0fa0-41d7-93ba-c1163f7c35a9"
+                LastKnownName="SelectedKategori.underattraktioner : Listview"
+                LastKnownLocation="DomainModel.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="3c7f9aa6-d02d-44f4-ade1-75edd342e7d0"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="DomainModel.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="60bdfe98-44ee-444f-b36b-b9e00bfb516f"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="DomainModel.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="8aad1b05-22fa-4e22-9c40-b524e1206794"
+                LastKnownName="MessageOccurrenceSpecification26"
+                LastKnownLocation="DomainModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="708551fd-5c5e-4a1a-a47e-7e3a44888cc4"
+                LastKnownName="MessageOccurrenceSpecification27"
+                LastKnownLocation="DomainModel.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="60bdfe98-44ee-444f-b36b-b9e00bfb516f"
+            name="ExecutionOccurrenceSpecification13">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="1dd252b0-6279-49b1-8553-4cada695feba"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="DomainModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="fe13a202-0fa0-41d7-93ba-c1163f7c35a9"
+                LastKnownName="SelectedKategori.underattraktioner : Listview"
+                LastKnownLocation="DomainModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="b565d5b7-4bf8-4755-ae81-160edee3cba7"
+            name="MessageOccurrenceSpecification25">
+            <covered>
+              <lifelineMoniker
+                Id="a980fd21-73a9-41f4-af78-6a3e53b1c5d8"
+                LastKnownName="TilføjAttraktionButton : TilføjAttraktionView"
+                LastKnownLocation="DomainModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="8aad1b05-22fa-4e22-9c40-b524e1206794"
+            name="MessageOccurrenceSpecification26">
+            <covered>
+              <lifelineMoniker
+                Id="fe13a202-0fa0-41d7-93ba-c1163f7c35a9"
+                LastKnownName="SelectedKategori.underattraktioner : Listview"
+                LastKnownLocation="DomainModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="708551fd-5c5e-4a1a-a47e-7e3a44888cc4"
+            name="MessageOccurrenceSpecification27">
+            <covered>
+              <lifelineMoniker
+                Id="fe13a202-0fa0-41d7-93ba-c1163f7c35a9"
+                LastKnownName="SelectedKategori.underattraktioner : Listview"
+                LastKnownLocation="DomainModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="9387525b-88d4-4fef-97f1-d5eb1f822d7b"
+            name="MessageOccurrenceSpecification28">
+            <covered>
+              <lifelineMoniker
+                Id="a980fd21-73a9-41f4-af78-6a3e53b1c5d8"
+                LastKnownName="TilføjAttraktionButton : TilføjAttraktionView"
+                LastKnownLocation="DomainModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="3c7f9aa6-d02d-44f4-ade1-75edd342e7d0"
+            name="ExecutionOccurrenceSpecification14">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="9baab6d9-e7cb-4498-bfbd-ab37c774415a"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="DomainModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="fe13a202-0fa0-41d7-93ba-c1163f7c35a9"
+                LastKnownName="SelectedKategori.underattraktioner : Listview"
+                LastKnownLocation="DomainModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="8b773f41-d8a4-4ba7-8332-2addcf472165"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="a980fd21-73a9-41f4-af78-6a3e53b1c5d8"
+                LastKnownName="TilføjAttraktionButton : TilføjAttraktionView"
+                LastKnownLocation="DomainModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e65f9fe0-2b68-4126-a0be-25879c359b77"
+            name="MessageOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="d4b0115f-0d3b-45e0-900f-d3102ff367df"
+                LastKnownName="Turist"
+                LastKnownLocation="DomainModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="08bff288-b40e-4c0a-b8b7-b650eabbc338"
+            name="ExecutionOccurrenceSpecification6">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="feb193ed-19b9-4c32-836b-cc80fcb92985"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="DomainModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="a980fd21-73a9-41f4-af78-6a3e53b1c5d8"
+                LastKnownName="TilføjAttraktionButton : TilføjAttraktionView"
+                LastKnownLocation="DomainModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
         <lifelines>
           <lifeline
             Id="d4b0115f-0d3b-45e0-900f-d3102ff367df"
@@ -416,13 +866,241 @@
                 Id="951eb3c0-8b26-4630-9134-9069dc4ddbd3"
                 LastKnownLocation="DomainModel.uml" />
             </represents>
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="64c04df5-770a-4155-a9a9-c2bbe7f195df"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="DomainModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="88b9d4ca-9e22-4909-a422-1acc7c0c98dc"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="DomainModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="88311866-d10c-4a28-9c4e-e79fd9b43cef"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="DomainModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="e65f9fe0-2b68-4126-a0be-25879c359b77"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="DomainModel.uml" />
+            </topLevelOccurrences>
           </lifeline>
           <lifeline
             Id="a980fd21-73a9-41f4-af78-6a3e53b1c5d8"
-            name="Lifeline1"
+            name="TilføjAttraktionButton : TilføjAttraktionView"
             isActor="false"
-            lifelineDisplayName="Lifeline1" />
+            lifelineDisplayName="TilføjAttraktionButton : TilføjAttraktionView">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="17ae353b-85f2-4b6d-a5b3-b2082119a799"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="DomainModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="08bff288-b40e-4c0a-b8b7-b650eabbc338"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="DomainModel.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="12e3ab92-bcbf-4c9d-aad5-254f0dc9e48c"
+            name=": Attraktioner"
+            isActor="false"
+            lifelineDisplayName=": Attraktioner">
+            <represents>
+              <propertyMoniker
+                Id="20f98c44-2307-4f48-93af-eec0c990e46e"
+                LastKnownLocation="DomainModel.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="c713042d-d507-4271-b9b4-a1a6c7ad323c"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="DomainModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="c45ba995-19e8-400d-bb24-fdcb20d7675f"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="DomainModel.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="fe13a202-0fa0-41d7-93ba-c1163f7c35a9"
+            name="SelectedKategori.underattraktioner : Listview"
+            isActor="false"
+            lifelineDisplayName="SelectedKategori.underattraktioner : Listview">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="be5c8849-4658-43fc-98f6-d5cc0cddf2c5"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="DomainModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="58a4b1a6-05c3-45c6-b9af-f7a1e46d674e"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="DomainModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="60bdfe98-44ee-444f-b36b-b9e00bfb516f"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="DomainModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="3c7f9aa6-d02d-44f4-ade1-75edd342e7d0"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="DomainModel.uml" />
+            </topLevelOccurrences>
+          </lifeline>
         </lifelines>
+        <messages>
+          <message
+            Id="12829230-d686-455c-b4b2-4473611644ab"
+            name="VælgerAttraktioner"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="64c04df5-770a-4155-a9a9-c2bbe7f195df"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="DomainModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="5b0d34c9-c586-4de6-9713-c6f3eb951065"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="DomainModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="67262a21-9c34-4d69-b09c-14f9a0acd3f5"
+            name="&lt;&lt;Valgt attraktion&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="a5c5b554-4c9d-4aaa-a21c-888390248fff"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="DomainModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="88b9d4ca-9e22-4909-a422-1acc7c0c98dc"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="DomainModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="373985ba-39d6-447f-a9c4-dc4dbce51230"
+            name="TilføjAttraktion"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="88311866-d10c-4a28-9c4e-e79fd9b43cef"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="DomainModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="aa84a14a-a340-449b-b84a-f2635c6d841d"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="DomainModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="d0961e83-92c9-4149-87b1-dd6127f6e21f"
+            name="Attraktion"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="25ee71c4-9dc9-41a6-9798-2fb56d3bfd41"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="DomainModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="4e92357e-6dec-49af-894c-993a81480298"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="DomainModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="a2dd8bc1-b1f0-40a1-b84b-30ac26c4783a"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="346e22c1-2a5e-42a9-8991-d3f861fe749d"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="DomainModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="c0083b4f-39b8-4249-8a45-3717366dae61"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="DomainModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="e9db010d-e26a-442c-8f70-079858d47b27"
+            name="TilføjetAttraktion"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="b565d5b7-4bf8-4755-ae81-160edee3cba7"
+                LastKnownName="MessageOccurrenceSpecification25"
+                LastKnownLocation="DomainModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="8aad1b05-22fa-4e22-9c40-b524e1206794"
+                LastKnownName="MessageOccurrenceSpecification26"
+                LastKnownLocation="DomainModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="1bd7cbac-e921-4e73-a7db-91cf1ae9e105"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="708551fd-5c5e-4a1a-a47e-7e3a44888cc4"
+                LastKnownName="MessageOccurrenceSpecification27"
+                LastKnownLocation="DomainModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="9387525b-88d4-4fef-97f1-d5eb1f822d7b"
+                LastKnownName="MessageOccurrenceSpecification28"
+                LastKnownLocation="DomainModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="ff538ff4-cdd9-45cc-a235-562d3bde41f9"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="8b773f41-d8a4-4ba7-8332-2addcf472165"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="DomainModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e65f9fe0-2b68-4126-a0be-25879c359b77"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="DomainModel.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
         <ownedAttributesInternal>
           <property
             Id="951eb3c0-8b26-4630-9134-9069dc4ddbd3"
@@ -437,6 +1115,22 @@
               <actorMoniker
                 Id="b2731dfe-7ea1-4b04-a7db-2251af63a841"
                 LastKnownName="Turist"
+                LastKnownLocation="DomainModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="20f98c44-2307-4f48-93af-eec0c990e46e"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="6d8a5a24-ab1a-4fb4-a422-1c7fa6f16ca8"
+                LastKnownName="Attraktioner"
                 LastKnownLocation="DomainModel.uml" />
             </type_NamedElement>
           </property>
@@ -868,6 +1562,641 @@
       <undefinedType
         Id="17f0e443-e74d-4ff4-b58f-b51d008efc88"
         name="Overskrift" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3e3df13b-07e2-4586-bb33-624b649cf9d3"
+        name="Attraktioner"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="505dfc37-b467-49f2-83fe-17546d49944f"
+            isDerived="false"
+            sourceEndRoleName="Attraktioner"
+            targetEndRoleName="Kategorier"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="acd42c27-6731-4b4e-9ec6-22520b10e801"
+              LastKnownName="Kategorier"
+              LastKnownLocation="DomainModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="73f62c4d-b3e7-42cd-baf0-6ca2461d2279"
+                  name="Attraktioner"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5a6c6630-a585-4cec-a9a5-2140895886c7"
+                  name="Kategorier"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="78e53e1b-ffdd-41cc-a8ea-168497b8ef36"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="5a15c452-aa97-484b-bf51-5b8720c8911a"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="2b60141f-8b89-4b47-a945-126892ed5c5b"
+            name="vurderinger"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="2d488cb9-1d45-41a1-91dc-5a390697f513"
+            name="åbningstider"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="48f306fd-66d1-4533-ab46-56b159b94d47"
+            name="telefon"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="69ee27a4-7143-43c9-9cec-507b72dc88ca"
+            name="pris"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="6ebce04b-33a7-42e6-8a6a-57f174702e88"
+            name="afstand"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="b8363c0d-c18e-4d34-b7d1-270c25f43bd2"
+            name="beskrivelse"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="ff52fdc3-2bbf-4e7a-85d8-cdd537a23ec6"
+            name="navn"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="35ce54bf-176f-4fc3-9a67-ed355008b929"
+            name="adresse"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="acd42c27-6731-4b4e-9ec6-22520b10e801"
+        name="Kategorier"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="95a699eb-9a18-42b3-80bb-0682e8ac91e6"
+            name="billede'"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="a98b46c2-115f-4a82-a4b4-be4863866b0d"
+            name="name"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="59678368-bab2-418c-bbbf-63a284491f75"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="9d62c8d4-7389-4117-a77c-ccfb6fd863dc"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="e5c9611c-fa1c-48d3-8369-0ea438704584"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="feb193ed-19b9-4c32-836b-cc80fcb92985"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="1bc596eb-86b4-41fa-991f-5de22d67a728"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="7e0db480-6192-4d2c-a6d4-73eae2a7f105"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="1dd252b0-6279-49b1-8553-4cada695feba"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="9baab6d9-e7cb-4498-bfbd-ab37c774415a"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="6bb4f382-ccbe-43fa-8044-118a1d3841b1"
+        name="FjernAttraktion"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="b6f156c8-2c52-4e26-af2f-62d165532e8f"
+            name="BehaviorExecutionSpecification1">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="74557fe1-3cb9-46fc-8bf4-170f90b132e9"
+                LastKnownName="SelectedKategori.Attraktioner : Listview"
+                LastKnownLocation="DomainModel.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="2e7c89b3-d10a-4a12-8caa-df7eba58a2a0"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="DomainModel.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="d3d96bc7-7b05-4b61-998a-8b9fd4c8f079"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="DomainModel.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="a064e18e-84ec-4401-98bc-33f6f70e95c7"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="DomainModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="27a0460a-994b-4ffc-a78b-75e244701f66"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="DomainModel.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="d3d96bc7-7b05-4b61-998a-8b9fd4c8f079"
+            name="ExecutionOccurrenceSpecification1">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="83a3fb83-84bd-4b51-a816-5fc055a4f2a0"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="DomainModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="74557fe1-3cb9-46fc-8bf4-170f90b132e9"
+                LastKnownName="SelectedKategori.Attraktioner : Listview"
+                LastKnownLocation="DomainModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="a2e8e91c-0353-4e76-9508-265a8e47647b"
+            name="MessageOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="ff20b873-2c28-418b-96c9-104106db0910"
+                LastKnownName="Turist"
+                LastKnownLocation="DomainModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="a064e18e-84ec-4401-98bc-33f6f70e95c7"
+            name="MessageOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="74557fe1-3cb9-46fc-8bf4-170f90b132e9"
+                LastKnownName="SelectedKategori.Attraktioner : Listview"
+                LastKnownLocation="DomainModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="27a0460a-994b-4ffc-a78b-75e244701f66"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="74557fe1-3cb9-46fc-8bf4-170f90b132e9"
+                LastKnownName="SelectedKategori.Attraktioner : Listview"
+                LastKnownLocation="DomainModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f21e6c41-1868-46c7-b6ea-cf63ea4a93da"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="ff20b873-2c28-418b-96c9-104106db0910"
+                LastKnownName="Turist"
+                LastKnownLocation="DomainModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="2e7c89b3-d10a-4a12-8caa-df7eba58a2a0"
+            name="ExecutionOccurrenceSpecification2">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="eae028f1-94c9-48dd-9f57-e4dd9e67b490"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="DomainModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="74557fe1-3cb9-46fc-8bf4-170f90b132e9"
+                LastKnownName="SelectedKategori.Attraktioner : Listview"
+                LastKnownLocation="DomainModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="1c994fed-5b71-4b13-b9e6-adec1ef599a6"
+            name="BehaviorExecutionSpecification2">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="74557fe1-3cb9-46fc-8bf4-170f90b132e9"
+                LastKnownName="SelectedKategori.Attraktioner : Listview"
+                LastKnownLocation="DomainModel.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="7fc954c6-4375-4c7d-bc9f-788c32f154b3"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="DomainModel.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="35d9d8d5-b1e4-4082-8fc7-a2f6555cd36f"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="DomainModel.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="2c8707f3-4392-4eae-80e5-ec2ad39c0ddb"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="DomainModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="deb5433e-f8bb-4fdb-afb6-6ad5d548855c"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="DomainModel.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="35d9d8d5-b1e4-4082-8fc7-a2f6555cd36f"
+            name="ExecutionOccurrenceSpecification3">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="77e09667-4593-4911-9e4e-cf5e0a11c59c"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="DomainModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="74557fe1-3cb9-46fc-8bf4-170f90b132e9"
+                LastKnownName="SelectedKategori.Attraktioner : Listview"
+                LastKnownLocation="DomainModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="768ed5f0-4d7a-404e-8b98-5a1a09bf9270"
+            name="MessageOccurrenceSpecification5">
+            <covered>
+              <lifelineMoniker
+                Id="ff20b873-2c28-418b-96c9-104106db0910"
+                LastKnownName="Turist"
+                LastKnownLocation="DomainModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="2c8707f3-4392-4eae-80e5-ec2ad39c0ddb"
+            name="MessageOccurrenceSpecification6">
+            <covered>
+              <lifelineMoniker
+                Id="74557fe1-3cb9-46fc-8bf4-170f90b132e9"
+                LastKnownName="SelectedKategori.Attraktioner : Listview"
+                LastKnownLocation="DomainModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="deb5433e-f8bb-4fdb-afb6-6ad5d548855c"
+            name="MessageOccurrenceSpecification7">
+            <covered>
+              <lifelineMoniker
+                Id="74557fe1-3cb9-46fc-8bf4-170f90b132e9"
+                LastKnownName="SelectedKategori.Attraktioner : Listview"
+                LastKnownLocation="DomainModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="9ab512ce-2e68-484d-838f-79d036d874c4"
+            name="MessageOccurrenceSpecification8">
+            <covered>
+              <lifelineMoniker
+                Id="ff20b873-2c28-418b-96c9-104106db0910"
+                LastKnownName="Turist"
+                LastKnownLocation="DomainModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="7fc954c6-4375-4c7d-bc9f-788c32f154b3"
+            name="ExecutionOccurrenceSpecification4">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="4bbf5f77-1ff3-4a49-b4e6-ae509ceb381e"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="DomainModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="74557fe1-3cb9-46fc-8bf4-170f90b132e9"
+                LastKnownName="SelectedKategori.Attraktioner : Listview"
+                LastKnownLocation="DomainModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="ff20b873-2c28-418b-96c9-104106db0910"
+            name="Turist"
+            isActor="true"
+            lifelineDisplayName="Turist">
+            <represents>
+              <propertyMoniker
+                Id="f5b6eed6-e611-4490-baf2-2ec22a4eb9cd"
+                LastKnownLocation="DomainModel.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="a2e8e91c-0353-4e76-9508-265a8e47647b"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="DomainModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="f21e6c41-1868-46c7-b6ea-cf63ea4a93da"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="DomainModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="768ed5f0-4d7a-404e-8b98-5a1a09bf9270"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="DomainModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="9ab512ce-2e68-484d-838f-79d036d874c4"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="DomainModel.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="74557fe1-3cb9-46fc-8bf4-170f90b132e9"
+            name="SelectedKategori.Attraktioner : Listview"
+            isActor="false"
+            lifelineDisplayName="SelectedKategori.Attraktioner : Listview">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="d3d96bc7-7b05-4b61-998a-8b9fd4c8f079"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="DomainModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="2e7c89b3-d10a-4a12-8caa-df7eba58a2a0"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="DomainModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="35d9d8d5-b1e4-4082-8fc7-a2f6555cd36f"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="DomainModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="7fc954c6-4375-4c7d-bc9f-788c32f154b3"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="DomainModel.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="980cbf12-b8d5-4656-96d3-00297ad4eadf"
+            name="SelectedAttraktion"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="a2e8e91c-0353-4e76-9508-265a8e47647b"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="DomainModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="a064e18e-84ec-4401-98bc-33f6f70e95c7"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="DomainModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="d0c4743a-0619-4367-a46c-970a76193629"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="27a0460a-994b-4ffc-a78b-75e244701f66"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="DomainModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="f21e6c41-1868-46c7-b6ea-cf63ea4a93da"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="DomainModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="e29e0229-a58e-44bb-9a89-1723331492ff"
+            name="FjernAttraktion"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="768ed5f0-4d7a-404e-8b98-5a1a09bf9270"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="DomainModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="2c8707f3-4392-4eae-80e5-ec2ad39c0ddb"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="DomainModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="5093ef90-a7f0-4998-a8a6-8e58722dd6f1"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="deb5433e-f8bb-4fdb-afb6-6ad5d548855c"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="DomainModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="9ab512ce-2e68-484d-838f-79d036d874c4"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="DomainModel.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="f5b6eed6-e611-4490-baf2-2ec22a4eb9cd"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <actorMoniker
+                Id="b2731dfe-7ea1-4b04-a7db-2251af63a841"
+                LastKnownName="Turist"
+                LastKnownLocation="DomainModel.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="83a3fb83-84bd-4b51-a816-5fc055a4f2a0"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="eae028f1-94c9-48dd-9f57-e4dd9e67b490"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="77e09667-4593-4911-9e4e-cf5e0a11c59c"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="4bbf5f77-1ff3-4a49-b4e6-ae509ceb381e"
+        name="ExecutionEvent" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

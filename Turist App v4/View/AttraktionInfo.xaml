@@ -17,7 +17,11 @@
     </Page.Resources>
     <Page.BottomAppBar>
         <CommandBar>
-            <AppBarButton Icon="Add" Label="Tilføj Attraktion" Click="AppBarButton_Click"/>
+            <AppBarButton Label="Tilføj Attraktion" Click="AppBarButton_Click">
+                <AppBarButton.Icon>
+                    <SymbolIcon Height="40" Symbol="Add" VerticalAlignment="Bottom"/>
+                </AppBarButton.Icon>
+            </AppBarButton>
             <AppBarButton Label="Slet Attraktion" Click="AppBarButton_Click_1">
                 <AppBarButton.Icon>
                     <SymbolIcon Height="40" Symbol="Cancel" VerticalAlignment="Top"/>

@@ -121,5 +121,10 @@ namespace Turist_App_v4.View
                 MainViewVM.Transport.RemoveAt(AttraktionInfoListView.SelectedIndex);
             }
         }
+
+        private void backButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

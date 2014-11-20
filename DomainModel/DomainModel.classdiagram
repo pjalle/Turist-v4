@@ -1,1 +1,94 @@
-﻿ 
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="23b54b19-e174-4eaa-9df4-d8b4a25e2d2c" name="DomainModel" linkedPackageId="0e867058-f348-48e2-bcdb-4b77f303bedb" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="a432ad71-e10b-49df-96a0-8fe627aad1af">
+      <profileInstance Id="a0d55733-30e6-4e32-a921-d697fd4ec68d" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="f65e6ff5-152b-49dd-b23f-a7a44e1d5b02">
+      <profileInstance Id="fcdc88bd-9584-4211-8188-8803450ceb1f" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d34733bc-aa68-43e1-94a5-a98510183f5a" name="Attraktioner" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3e3df13b-07e2-4586-bb33-624b649cf9d3" />
+        <targetEnds>
+          <association Id="0e76958b-3ab0-435e-a262-673093abe7b2" isDerived="false" sourceEndRoleName="Attraktioner" targetEndRoleName="Kategorier" isLeaf="false" isAbstract="false">
+            <classMoniker Id="6e5c2048-6733-4078-b4fa-b658e06447b5" LastKnownName="Kategorier" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="492e4028-7fe6-4642-bb28-df4df91aa6cb" name="Attraktioner" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="73f62c4d-b3e7-42cd-baf0-6ca2461d2279" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3b6d5905-0909-486d-b99e-a9e8788812a2" name="Kategorier" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="2049c3e6-fdb2-4f70-b265-2a6a0e7e0c9c" name="Lower" value="*">
+                      <elementDefinition Id="78e53e1b-ffdd-41cc-a8ea-168497b8ef36" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="d07da487-7dec-4dee-9ef1-049549776132" name="Upper" value="*">
+                      <elementDefinition Id="5a15c452-aa97-484b-bf51-5b8720c8911a" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="5a6c6630-a585-4cec-a9a5-2140895886c7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="505dfc37-b467-49f2-83fe-17546d49944f" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="6357c0b4-63a4-476d-9f51-0c5f946ccf05" name="vurderinger" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2b60141f-8b89-4b47-a945-126892ed5c5b" />
+          </property>
+          <property Id="7e885966-1620-443e-9929-e75536b67dc4" name="åbningstider" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2d488cb9-1d45-41a1-91dc-5a390697f513" />
+          </property>
+          <property Id="08e1ed0b-4d2a-4572-8632-762c50585139" name="telefon" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="48f306fd-66d1-4533-ab46-56b159b94d47" />
+          </property>
+          <property Id="774a67a4-09c8-4c9f-9926-594d79337046" name="pris" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="69ee27a4-7143-43c9-9cec-507b72dc88ca" />
+          </property>
+          <property Id="28f97361-8391-4009-8b43-db6d96bab669" name="afstand" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6ebce04b-33a7-42e6-8a6a-57f174702e88" />
+          </property>
+          <property Id="215b172a-a907-42f3-815e-71eaa9c0e09e" name="beskrivelse" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b8363c0d-c18e-4d34-b7d1-270c25f43bd2" />
+          </property>
+          <property Id="593effa7-9696-450c-a208-8f5de8530b3b" name="navn" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ff52fdc3-2bbf-4e7a-85d8-cdd537a23ec6" />
+          </property>
+          <property Id="45843b18-0e13-4954-9e1c-4caad93c0f72" name="adresse" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="35ce54bf-176f-4fc3-9a67-ed355008b929" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6e5c2048-6733-4078-b4fa-b658e06447b5" name="Kategorier" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="acd42c27-6731-4b4e-9ec6-22520b10e801" />
+        <ownedAttributesInternal>
+          <property Id="2e537aa9-a934-4480-a82c-7d5c00afc3e1" name="billede'" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="95a699eb-9a18-42b3-80bb-0682e8ac91e6" />
+          </property>
+          <property Id="47e56666-e96b-44d1-a3de-97b13bc4c138" name="name" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a98b46c2-115f-4a82-a4b4-be4863866b0d" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="0e867058-f348-48e2-bcdb-4b77f303bedb" name="DomainModel">
+    <elementDefinition Id="af11a049-3827-4c91-94f0-661281ba42b4" />
+  </package>
+</logicalClassDesignerModel>

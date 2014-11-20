@@ -17,7 +17,11 @@
     </Page.Resources>
     <Page.BottomAppBar>
         <CommandBar>
-            <AppBarButton x:ConnectionId='1' Icon="Add" Label="Tilføj Attraktion"                           />
+            <AppBarButton x:ConnectionId='1' Label="Tilføj Attraktion"                           >
+                <AppBarButton.Icon>
+                    <SymbolIcon Height="40" Symbol="Add" VerticalAlignment="Bottom"/>
+                </AppBarButton.Icon>
+            </AppBarButton>
             <AppBarButton x:ConnectionId='2' Label="Slet Attraktion"                             >
                 <AppBarButton.Icon>
                     <SymbolIcon Height="40" Symbol="Cancel" VerticalAlignment="Top"/>

@@ -29,12 +29,19 @@
       <SubType>Content</SubType>
       <DependentUpon>DesignClassDiagram.classdiagram</DependentUpon>
     </Content>
-    <Content Include="SequenceDiagram.sequencediagram">
+    <Content Include="FjernAttraktion.sequencediagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="SequenceDiagram.sequencediagram.layout">
+    <Content Include="FjernAttraktion.sequencediagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>SequenceDiagram.sequencediagram</DependentUpon>
+      <DependentUpon>FjernAttraktion.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="TilføjAttraktion.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TilføjAttraktion.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TilføjAttraktion.sequencediagram</DependentUpon>
     </Content>
     <Content Include="UseCase.usecasediagram">
       <SubType>Content</SubType>

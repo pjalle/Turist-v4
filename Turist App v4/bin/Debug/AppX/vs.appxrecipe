@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>KASPER-MAC</Machine>
-    <WindowsUser>Kasper</WindowsUser>
+    <Machine>LARFORT-PC</Machine>
+    <WindowsUser>Larfort</WindowsUser>
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>bd3d0bb7-aec4-4aef-b1e3-86fd262d3d90</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\obj\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>2F1BA3ADDB38CE4524C6BCAED1B611AC464F07DB896001A7C38682AED45876CB</RegisteredManifestChecksum>
+    <IntermediateOutputPath>C:\Users\Daniel\Documents\GitHub\Turist-v4\Turist App v4\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>949ED02C4A4F1170075AB70EC28C4BFA30A016AF0C8F58E38A2F10E7377EF6C6</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>bd3d0bb7-aec4-4aef-b1e3-86fd262d3d90_1.0.0.0_neutral__vmeecd2390gk4</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>bd3d0bb7-aec4-4aef-b1e3-86fd262d3d90_vmeecd2390gk4!App</RegisteredUserModeAppID>
     <RegisteredPackageID>bd3d0bb7-aec4-4aef-b1e3-86fd262d3d90</RegisteredPackageID>
@@ -17,60 +17,60 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Daniel\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-11-19T10:03:52.217</Modified>
+      <Modified>2014-11-20T10:05:02.175</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\Turist App v4.exe">
+    <AppxPackagedFile Include="C:\Users\Daniel\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\Turist App v4.exe">
       <PackagePath>Turist App v4.exe</PackagePath>
-      <Modified>2014-11-19T10:42:46.529</Modified>
+      <Modified>2014-11-20T10:44:30.390</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Daniel\Documents\GitHub\Turist-v4\Turist App v4\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-11-14T09:45:32.629</Modified>
+      <Modified>2014-11-20T10:01:20.142</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Daniel\Documents\GitHub\Turist-v4\Turist App v4\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-11-14T09:45:32.630</Modified>
+      <Modified>2014-11-20T10:01:20.143</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Daniel\Documents\GitHub\Turist-v4\Turist App v4\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-11-14T09:45:32.642</Modified>
+      <Modified>2014-11-20T10:01:20.147</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Daniel\Documents\GitHub\Turist-v4\Turist App v4\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-11-14T09:45:32.643</Modified>
+      <Modified>2014-11-20T10:01:20.148</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Daniel\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2014-11-19T10:03:51.033</Modified>
+      <Modified>2014-11-20T10:05:00.429</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\View\AttraktionInfo.xbf">
+    <AppxPackagedFile Include="C:\Users\Daniel\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\View\AttraktionInfo.xbf">
       <PackagePath>View\AttraktionInfo.xbf</PackagePath>
-      <Modified>2014-11-19T10:42:46.213</Modified>
+      <Modified>2014-11-20T10:44:29.659</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\View\MainView.xbf">
+    <AppxPackagedFile Include="C:\Users\Daniel\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\View\MainView.xbf">
       <PackagePath>View\MainView.xbf</PackagePath>
-      <Modified>2014-11-19T10:42:46.213</Modified>
+      <Modified>2014-11-20T10:05:00.430</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\View\TilføjAttraktionView.xbf">
+    <AppxPackagedFile Include="C:\Users\Daniel\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\View\TilføjAttraktionView.xbf">
       <PackagePath>View\TilføjAttraktionView.xbf</PackagePath>
-      <Modified>2014-11-19T10:42:46.213</Modified>
+      <Modified>2014-11-20T10:05:00.431</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\Turist App v4.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Daniel\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\Turist App v4.xr.xml">
       <PackagePath>Turist App v4.xr.xml</PackagePath>
-      <Modified>2014-11-19T10:40:37.161</Modified>
+      <Modified>2014-11-20T10:44:29.524</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kasper\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Daniel\Documents\GitHub\Turist-v4\Turist App v4\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-11-19T10:03:51.804</Modified>
+      <Modified>2014-11-20T10:05:01.775</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
